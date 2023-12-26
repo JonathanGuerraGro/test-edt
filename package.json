@@ -1,0 +1,36 @@
+{
+  "name": "template-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.33.0",
+    "antd": "^5.12.5",
+    "autoprefixer": "10.4.15",
+    "axios": "^1.4.0",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "postcss": "8.4.28",
+    "prettier": "^3.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
+    "react-query": "^3.39.3",
+    "typescript": "5.2.2",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/next": "^9.0.0",
+    "@types/node": "20.5.4",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "@types/react-query": "^1.2.9",
+    "daisyui": "^3.6.1"
+  }
+}
