@@ -1,7 +1,7 @@
-import Header from "./header";
 import Footer from "./footer";
 import { LayoutProps } from "@/interfaces/layout";
 import { useIsFetching, useIsMutating } from "react-query";
+import MelpHeader from "./header";
 
 const Layout = ({ children }: LayoutProps) => {
   const isFetching = useIsFetching();
@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <main>
-        <Header />
+        <MelpHeader />
         <section>{children}</section>
         <Footer />
       </main>
