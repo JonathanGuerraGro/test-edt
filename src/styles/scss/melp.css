@@ -32,13 +32,22 @@
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   }
   .text-loading {
-    position: absolute; /* Esto hará que el texto esté posicionado en relación con el div más cercano con posición relativa o absoluta */
-    top: 55%; /* Esto colocará el texto un poco debajo del centro verticalmente */
-    left: 51.5%; /* Esto colocará el texto en el centro horizontalmente */
-    transform: translate(-50%, -50%); /* Esto centrará el texto exactamente en el centro de la pantalla */
+    position: absolute; 
+    top: 55%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff;
   }
   
+  .text-title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+  }
   
-  
+  .filters{
+      align-items: center;
+      gap: 10px;
+  }

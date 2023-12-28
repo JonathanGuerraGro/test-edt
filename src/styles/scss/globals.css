@@ -24,11 +24,11 @@
 }
 
 .spinner {
-  position: fixed; /* Esto hará que el spinner esté posicionado en relación con la ventana del navegador */
-  top: 50%; /* Esto colocará el spinner en el centro verticalmente */
-  left: 50%; /* Esto colocará el spinner en el centro horizontalmente */
-  transform: translate(-50%, -50%); /* Esto centrará el spinner exactamente en el centro de la pantalla */
-  z-index: 9999; /* Esto asegurará que el spinner esté por encima de otros elementos */
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
 
   width: 36px;
   height: 36px;
@@ -59,4 +59,8 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
 }
