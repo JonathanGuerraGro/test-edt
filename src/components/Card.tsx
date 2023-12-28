@@ -1,9 +1,8 @@
 import { ICardComponentProps } from "@/interfaces/cardComponent";
-import { Card } from "antd";
+import { Card, Rate } from "antd";
 import React from "react";
 
 const RestaurantCard = ({
-  id,
   name,
   rating,
   contact,
@@ -12,12 +11,11 @@ const RestaurantCard = ({
   return (
     <Card
       hoverable
-      style={{ width: 240 }}
+      style={{ width: 280 }}
       cover={<img alt="restaurant" src="/Hamburguesa.jpg" />}
     >
-      <p>{id}</p>
+      <Rate disabled defaultValue={rating} />
       <p>{name}</p>
-      <p>{rating}</p>
       <p>{contact.email}</p>
       <p>{contact.phone}</p>
       <p>{contact.site}</p>

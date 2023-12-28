@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RestaurantCard from "@/components/Card";
 import { IRestaurantsContainerProps } from "@/interfaces/restaurantsContainerProps";
-import { Col, Flex, Pagination, Row, Select } from "antd";
+import { Flex, Pagination, Select } from "antd";
 import TitlePage from "@/components/titlePage";
 import SearchFilter from "@/components/searchComponent";
 
@@ -51,7 +51,6 @@ const RestaurantContainer = ({
     ?.map((restaurant) => (
       <RestaurantCard
         key={restaurant?.id}
-        id={restaurant?.id}
         name={restaurant?.name}
         rating={restaurant?.rating}
         contact={restaurant?.contact}
@@ -59,6 +58,7 @@ const RestaurantContainer = ({
       />
     ));
   const totalItems = dataRestaurants?.length || 0;
+
   const calculatePageSizeOptions = (totalItems: number): string[] => {
     const options = [2, 5, 10].map((divisor) =>
       Math.ceil(totalItems / divisor)
