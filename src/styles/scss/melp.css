@@ -1,0 +1,44 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+  }
+
+  .image-container {
+    position: relative;
+    
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    object-position: center 55%;
+  }
+
+  .title-centered-text {
+    margin-top: 50px;
+    top: 25%;
+    left: -100px;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 5rem; 
+    color: #ffffff; 
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 250px;
+    line-height: 0.10;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  .text-loading {
+    position: absolute; /* Esto hará que el texto esté posicionado en relación con el div más cercano con posición relativa o absoluta */
+    top: 55%; /* Esto colocará el texto un poco debajo del centro verticalmente */
+    left: 51.5%; /* Esto colocará el texto en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Esto centrará el texto exactamente en el centro de la pantalla */
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  
+  

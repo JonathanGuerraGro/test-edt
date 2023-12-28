@@ -1,5 +1,6 @@
 import React from "react";
 import { Layout, Menu, MenuProps } from "antd";
+import Head from "next/head";
 
 const { Header } = Layout;
 
@@ -23,13 +24,17 @@ const items: MenuProps["items"] = [
 
 const MelpHeader = () => {
   return (
-    <Layout>
+    <Layout style={{ background: "none" }}>
+      <Head>
+        <title>Melp</title>
+        <link rel="icon" href="./logo.svg" />
+      </Head>
       <Header
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-
+          marginBottom: "10px",
           background: "none",
         }}
       >
